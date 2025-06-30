@@ -2,13 +2,11 @@
 
 Aplicación web desarrollada con **React + Next.js** y **Material UI** que permite explorar los 151 Pokémon de la primera generación. Ofrece dos vistas (tabla y cuadrícula), filtros por tipo, modal con detalles de los pokémones, entre otras funcionalidades.
 
----
 
 ## 🌐 Demo
 
-🔗 Puedes ver la aplicación funcionando aquí 👉 [Ver aplicación en Vercel](https://explorer-pokemon-app.vercel.app/)
+🔗 Puedes ver la aplicación funcionando aquí 👉 [Explorador de pokémones](https://explorer-pokemon-app.vercel.app/)
 
----
 
 ## 📸 Captura de pantalla
 
@@ -16,19 +14,14 @@ Vista tabla | Vista cuadrícula
 :--:|:--:  
 ![Vista tabla](image.png) | ![Vista cuadrícula](image-1.png)
 
-Modal de detalles
-
-![Detalles](image-2.png)
-
-Filtros activos
-
-![Filtros](image-3.png)
+Modal de detalles | Filtros activos
+:--:|:--:
+![Detalles](image-2.png) | ![Filtros](image-3.png)
 
 Paginación en la vista de tabla y opcion para ver detalles
 
 ![paginación](image-4.png)
 
----
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -39,7 +32,6 @@ Paginación en la vista de tabla y opcion para ver detalles
 - [TanStack Table](https://tanstack.com/table/latest)
 - [PokéAPI](https://pokeapi.co)
 
----
 
 ## 🔧 Instrucciones para correr el proyecto localmente
 
@@ -69,7 +61,6 @@ npm run dev
 http://localhost:3000
 ```
 
----
 
 ## ✨ Autor
 
