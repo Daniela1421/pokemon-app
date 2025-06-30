@@ -98,19 +98,19 @@ const PokemonModal = ({ open, onClose, pokemon }: Props) => {
           />
         </Box>
         <Grid container spacing={2} mb={2}>
-          <Grid item xs={6}>
+          <Grid size={{ xs: 6 }}>
             <Typography variant="body2" color="text.secondary">
               Altura:
             </Typography>
             <Typography variant="body1">{pokemon.height / 10} m</Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={{ xs: 6 }}>
             <Typography variant="body2" color="text.secondary">
               Peso:
             </Typography>
             <Typography variant="body1">{pokemon.weight / 10} kg</Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={{ xs: 6 }}>
             <Typography variant="body2" color="text.secondary">
               Experiencia base:
             </Typography>

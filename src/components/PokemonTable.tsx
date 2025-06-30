@@ -90,7 +90,10 @@ const PokemonTable = ({ pokemons, onSelectPokemon }: Props) => {
     {
       header: 'Salud base',
       accessorFn: (row) => getStat(row, 'hp'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+      cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
     },
     {
       header: 'Exp. Base',
@@ -100,27 +103,43 @@ const PokemonTable = ({ pokemons, onSelectPokemon }: Props) => {
     {
       header: 'Ataque',
       accessorFn: (row) => getStat(row, 'attack'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+      cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
+
     },
     {
       header: 'Defensa',
       accessorFn: (row) => getStat(row, 'defense'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+      cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
     },
     {
       header: 'Atq. Especial',
       accessorFn: (row) => getStat(row, 'special-attack'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+      cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
     },
     {
       header: 'Def. Especial',
       accessorFn: (row) => getStat(row, 'special-defense'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+      cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
     },
     {
       header: 'Velocidad',
       accessorFn: (row) => getStat(row, 'speed'),
-      cell: ({ getValue }) => <StatChip value={getValue()} />,
+            cell: ({ getValue }) => {
+        const value = getValue();
+        return typeof value === 'number' ? <StatChip value={value} /> : null;
+      },
     },
     {
       header: 'Detalles',
